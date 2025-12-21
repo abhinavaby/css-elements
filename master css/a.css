@@ -1,0 +1,79 @@
+#a{
+    width:100px;
+    height:100px;
+    background-color: aqua;
+    border: 3px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    transition-property:all;
+    transition-duration: 2s;
+    
+}
+#b{
+     width:100px;
+    height:100px;
+    background-color: aqua;
+    border: 3px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    transition-property: all;
+    transition-duration: 2s;transition-timing-function:steps(5);
+    
+}
+#c{
+     width:100px;
+    height:100px;
+    background-color: aqua;
+    border: 3px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 2s;
+  
+}
+#d{
+     width:100px;
+    height:100px;
+    background-color: aqua;
+    border: 3px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    transition-property: all;
+    transition-duration: 2s;
+    
+}
+#e{
+     width:100px;
+    height:100px;
+    background-color: aqua;
+    border: 3px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    /*transition-property:all;
+    transition-duration: 2s;*/
+    transition: all 2s ease-in-out 1s;
+    
+}
+#a:hover{
+    background-color: rgb(86, 255, 74);
+    font-size: 40px;
+    width:200px;
+    height:200px
+}
+#a:active{
+    background-color: rgb(255, 127, 127);
+}
+#b:hover,#c:hover,#d:hover,#e:hover{ background-color: rgb(86, 255, 74);
+    font-size: 40px;
+    width:200px;
+    height:200px;
+    
+
+}
+#e:hover{transform: rotate(30deg);}

@@ -1,0 +1,24 @@
+div{
+    height:100px;
+    width:100px;
+    background-color: rgb(255, 0, 0);
+    position:absolute;
+    animation-name: coloranimation ;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: motion 5s ease-in infinite alternate ;
+
+}
+@keyframes coloranimation{
+    from{background-color: rgb(255, 0, 0);}
+    to{background-color: rgb(0, 255, 170);}
+}
+@keyframes motion{
+    from{left:0px;}
+    to{left:800px;}
+}
