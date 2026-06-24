@@ -1,0 +1,23 @@
+body{
+  
+}
+
+
+
+
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid blue;
+    font-size: 3em;
+
+}
+
+.container{
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(3,150px);
+    grid-template-rows: repeat(3,250px);
+    height: 98vh;
+}
