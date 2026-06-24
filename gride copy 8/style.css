@@ -1,23 +1,46 @@
-body{
+/* Parent Grid Container */
+.grid-container {
+  display: grid;
+  height: 98vh;
+  grid-template-columns: 1fr 1fr; /* Defines 2 equal horizontal tracks */
+  grid-template-rows: auto auto auto; /* Defines 3 vertical tracks */
+  gap: 20px; /* Space between the blocks */
   
+  /* Layout template configuration matching the diagram */
+  grid-template-areas:
+    "header  header"
+    "content sidebar"
+    "footer  footer";
 }
 
-
-
-
-.container div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border:2px solid blue;
-    font-size: 3em;
-
+/* Individual Grid Items mapped to the template */
+#header {
+  grid-area: header;
+  background-color: #f2711c; /* Orange */
 }
 
-.container{
-    display: grid;
-    grid-gap: 40px 5px;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
-    height: 98vh;
+#content {
+  grid-area: content;
+  background-color: #db2828; /* Red */
+}
+
+#sidebar {
+  grid-area: sidebar;
+  background-color: #b5cc18; /* Lime Green */
+}
+
+#footer {
+  grid-area: footer;
+  background-color: #6435c9; /* Purple */
+}
+
+/* Generic presentation styles for layout blocks */
+.grid-container > div {
+  color: white;
+  padding: 40px;
+  font-family: serif;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 10px;
+  
 }
